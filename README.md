@@ -104,3 +104,16 @@ DELETE /proverbs/:id
 ]
 
 ```
+
+### 🛠 Tech Stack
+● Node.js
+
+● Express
+
+● File System (fs)
+
+● JSON for data storage and API responses
+
+## 📫 Author
+### Kubra Islami
+#### ⚙️Frontend & Backend Developer
