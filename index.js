@@ -5,7 +5,7 @@ import routes from "./src/routes/routes.js";
 
 // init express app
 const app = express();
-const PORT = 3003;
+const PORT = process.env.PORT || 3000;
 
 
 // middlewares
