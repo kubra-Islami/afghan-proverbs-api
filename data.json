@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "textDari": " 1دیگ به دیگ می‌گوید رویت سیاه",
+    "textPashto": " 1یوه لوښي بل ته وایي چې مخ دې تور دی",
+    "translationEn": "1 The pot calls the kettle black.",
+    "meaning": "1 Criticizing someone for a fault you also have.",
+    "category": "1 irony"
+  },
+  {
+    "id": 2,
+    "textDari": " سیاه دیگ به دیگ می‌گوید رویت ",
+    "textPashto": " یوه لوښي بل ته وایي چې مخ دې تور دی",
+    "translationEn": " The pot calls the kettle black.",
+    "meaning": " Criticizing someone for a fault you also have.",
+    "category": " irony"
+  },
+  {
+    "id": 3,
+    "textDari": " 3دیگ به دیگ می‌گوید رویت سیاه",
+    "textPashto": " 3یوه لوښي بل ته وایي چې مخ دې تور دی",
+    "translationEn": "3 The pot calls the kettle black.",
+    "meaning": "3 Criticizing someone for a fault you also have.",
+    "category": "3 irony"
+  }
+]
