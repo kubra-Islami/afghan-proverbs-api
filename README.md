@@ -12,7 +12,7 @@ This is a RESTful API built with Node.js and Express that stores and manages tra
   - Explanation (meaning)
   - Category (e.g., wisdom, advice)
 
-> Optional features like filtering, random proverb, or search were not implemented.
+> Optional features like filtering, random proverb, or search were not implemented yet but i will do soon .
 
 ---
 
