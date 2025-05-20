@@ -1,26 +1,74 @@
 [
   {
     "id": 1,
-    "textDari": " 1دیگ به دیگ می‌گوید رویت سیاه",
-    "textPashto": " 1یوه لوښي بل ته وایي چې مخ دې تور دی",
-    "translationEn": "1 The pot calls the kettle black.",
-    "meaning": "1 Criticizing someone for a fault you also have.",
-    "category": "1 irony"
+    "textDari": "تا مرد سخن نگفته باشد، عیب و هنرش نهفته باشد",
+    "textPashto": "تر څو چې سړی خبرې نه وي کړي، د هغه عیب او هنر پټ وي",
+    "translationEn": "Until a man speaks, his flaws and virtues are hidden.",
+    "meaning": "Speech reveals one's character and intelligence.",
+    "category": "Wisdom"
   },
   {
     "id": 2,
-    "textDari": " سیاه دیگ به دیگ می‌گوید رویت ",
-    "textPashto": " یوه لوښي بل ته وایي چې مخ دې تور دی",
-    "translationEn": " The pot calls the kettle black.",
-    "meaning": " Criticizing someone for a fault you also have.",
-    "category": " irony"
+    "textDari": "عقل سالم در بدن سالم است",
+    "textPashto": "صحتمند بدن کې سالم عقل وي",
+    "translationEn": "A sound mind is in a sound body.",
+    "meaning": "Good physical health supports clear thinking.",
+    "category": "Wisdom"
   },
   {
     "id": 3,
-    "textDari": " 3دیگ به دیگ می‌گوید رویت سیاه",
-    "textPashto": " 3یوه لوښي بل ته وایي چې مخ دې تور دی",
-    "translationEn": "3 The pot calls the kettle black.",
-    "meaning": "3 Criticizing someone for a fault you also have.",
-    "category": "3 irony"
+    "textDari": "هرکه بامش بیش، برفش بیشتر",
+    "textPashto": "څوک چې لوړ بام لري، زیات واورې پرې لویږي",
+    "translationEn": "He who has a bigger roof gets more snow.",
+    "meaning": "Greater responsibilities come with greater possessions.",
+    "category": "Wisdom"
+  },
+  {
+    "id": 4,
+    "textDari": "صبر تلخ است ولی میوه‌اش شیرین",
+    "textPashto": "صبر تریخ وي خو مېوه یې خوږه وي",
+    "translationEn": "Patience is bitter, but its fruit is sweet.",
+    "meaning": "Patience leads to rewarding outcomes.",
+    "category": "Patience"
+  },
+  {
+    "id": 5,
+    "textDari": "با صبر، سنگ به گنج می‌شود",
+    "textPashto": "په صبر سره ډبره خزانه کېږي",
+    "translationEn": "With patience, a stone turns into a treasure.",
+    "meaning": "Patience can transform challenges into rewards.",
+    "category": "Patience"
+  },
+  {
+    "id": 6,
+    "textDari": "آب آرام سنگ را می‌ساید",
+    "textPashto": "ارام اوبه ډبره سایې",
+    "translationEn": "Calm water wears down the stone.",
+    "meaning": "Persistence and patience overcome difficulties.",
+    "category": "Patience"
+  },
+  {
+    "id": 7,
+    "textDari": "خون از آب غلیظ‌تر است",
+    "textPashto": "وینه له اوبو غټه ده",
+    "translationEn": "Blood is thicker than water.",
+    "meaning": "Family bonds are stronger than others.",
+    "category": "Family"
+  },
+  {
+    "id": 8,
+    "textDari": "خانه بی‌پدر، مثل گورستان است",
+    "textPashto": "بې پلاره کور لکه هدیره وي",
+    "translationEn": "A house without a father is like a graveyard.",
+    "meaning": "A father's presence is vital to the household.",
+    "category": "Family"
+  },
+  {
+    "id": 9,
+    "textDari": "مادر تاج سر است",
+    "textPashto": "مور د سر تاج دی",
+    "translationEn": "Mother is the crown of the head.",
+    "meaning": "A mother holds the highest honor in the family.",
+    "category": "Family"
   }
 ]
