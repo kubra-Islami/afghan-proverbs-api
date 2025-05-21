@@ -1,26 +1,13 @@
 import express from "express";
-
 const router = express.Router();
-import fs from "node:fs";
-import path from "node:path";
-import {fileURLToPath} from "node:url";
 import {AddProverbs, getProverbData, saveProverbs} from "../utils/proverbUtil.js";
-
-// __dirname setup
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-//
-const dataFileDir = path.join(__dirname, '..');
-const proverbData = path.join(dataFileDir, 'data.json');
 
 
 // =========================================================  //
 // ==================== GET ALL PROVERBS =====================//
 // =========================================================  //
-
 router.get('/', (req, res) => {
     try {
-        // const data = fs.readFileSync(proverbData, "utf-8");
         const data = getProverbData();
         res.send(JSON.parse(data));
     } catch (err) {
@@ -32,13 +19,11 @@ router.get('/', (req, res) => {
 // =========================================================  //
 // ===================== ADD N NEW PROVERB ===================//
 // =========================================================  //
-
 router.post('/', (req, res) => {
     try {
         const proverb = req.body;
-        console.log(proverb);
+        proverb.id = Date.now();
         AddProverbs(proverb);
-        // saveProverb(proverb);
         res.send(proverb);
     } catch (err) {
         console.error("POST / error:", err);
@@ -50,7 +35,6 @@ router.post('/', (req, res) => {
 // =========================================================  //
 // =============== GET A SINGLE PROVERB BY ID  ===============//
 // =========================================================  //
-
 router.get('/:id', (req, res) => {
     try {
         const id = req.params.id;
@@ -97,11 +81,9 @@ router.put('/:id', (req, res) => {
 });
 
 
-
 // =========================================================  //
 // ===================== DELETE A PROVERB ====================//
 // =========================================================  //
-
 router.delete('/:id', (req, res) => {
     try {
         const allProverbs = JSON.parse(getProverbData());
