@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from "morgan";
 import routes from "./src/routes/routes.js";
-// const cors = require('cors');
+const cors = require('cors');
 
 
 // init express app
@@ -9,7 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // allows cross-origin requests
-// app.use(cors());
+app.use(cors());
+
 
 // middlewares
 app.use(morgan('dev'));
