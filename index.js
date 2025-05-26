@@ -7,41 +7,9 @@ import routes from "./src/routes/routes.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// CORS options (optional: restrict to frontend origin)
-// const corsOptions = {
-//     origin: ['http://localhost:5173', 'https://afghan-proverbs-api-kysw.onrender.com',"*"],
-//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-//     allowedHeaders: ['Content-Type', 'Authorization'],
-// };
-
-// app.use(cors({ origin: '*' }));
-app.use(cors({
-    origin: ['http://localhost:5173', 'https://afghan-proverbs-api-kysw.onrender.com'], // Allow both dev and production frontend
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type'],
-}));
 
 // Use CORS middleware
-// app.use(cors(corsOptions));
-
-// Middleware for preflight requests
-// app.options('*', cors(corsOptions));
-
-
-
-// app.use((req, res, next) => {
-//     res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
-//     res.header('Access-Control-Allow-Origin', '*');
-//     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-//     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//
-//     if (req.method === 'OPTIONS') {
-//         return res.sendStatus(204);
-//     }
-//
-//     next();
-// });
-
+app.use(cors(corsOptions));
 
 // Logging and body parsing
 app.use(morgan('dev'));
