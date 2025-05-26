@@ -1,25 +1,26 @@
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
+import corsOptions from './src/routes/corsOptions.js';
 import routes from "./src/routes/routes.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // CORS options (optional: restrict to frontend origin)
-const corsOptions = {
-    origin: ['http://localhost:5173', 'https://afghan-proverbs-api-kysw.onrender.com',"*"],
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-};
+// const corsOptions = {
+//     origin: ['http://localhost:5173', 'https://afghan-proverbs-api-kysw.onrender.com',"*"],
+//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+// };
 
-app.use(cors({ origin: '*' }));
+// app.use(cors({ origin: '*' }));
 
 // Use CORS middleware
 app.use(cors(corsOptions));
 
 // Middleware for preflight requests
-app.options('*', cors(corsOptions));
+// app.options('*', cors(corsOptions));
 
 
 
