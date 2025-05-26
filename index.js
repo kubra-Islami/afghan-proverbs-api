@@ -15,9 +15,14 @@ const PORT = process.env.PORT || 3000;
 // };
 
 // app.use(cors({ origin: '*' }));
+app.use(cors({
+    origin: ['http://localhost:5173', 'https://afghan-proverbs-api-kysw.onrender.com'], // Allow both dev and production frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type'],
+}));
 
 // Use CORS middleware
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // Middleware for preflight requests
 // app.options('*', cors(corsOptions));
