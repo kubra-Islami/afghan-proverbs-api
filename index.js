@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 
 // Use CORS middleware
+app.use(cors());
 app.use(cors(corsOptions));
+
 
 // Logging and body parsing
 app.use(morgan('dev'));
